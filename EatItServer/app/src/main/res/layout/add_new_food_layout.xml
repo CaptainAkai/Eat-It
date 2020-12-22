@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtName"
+            android:hint="Tên món ăn..."
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="34sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/holo_blue_dark"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtDiscripton"
+            android:hint="Mô tả..."
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            app:met_baseColor="@android:color/holo_blue_dark"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPrice"
+            android:hint="Giá..."
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:inputType="number"
+            app:met_baseColor="@android:color/holo_blue_dark"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtDiscount"
+            android:hint="Giảm giá..."
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:inputType="number"
+            app:met_baseColor="@android:color/holo_blue_dark"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnSelect"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Chọn ảnh"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/white"
+                android:background="@color/btnSignActive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Tải lên"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/white"
+                android:background="@color/btnSignActive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
